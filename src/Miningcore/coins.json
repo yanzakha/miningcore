@@ -36,6 +36,36 @@
         "explorerTxLink": "https://explorer.fiveg.cash/tx/{0}",
         "explorerAccountLink": "https://explorer.fiveg.cash/address/{0}"
     },
+    "taler": {
+        "name": "Taler",
+        "canonicalName": "Taler",
+        "symbol": "TLR",
+        "family": "bitcoin",
+        "website": "",
+        "market": "",
+        "twitter": "",
+        "telegram": "",
+        "discord": "",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "lyra2z",
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [ { "hash": "lyra2z" } ]
+        },
+        "posBlockHasher": {
+            "hash": "reverse",
+            "args": [ {  "hash": "lyra2z" } ]
+
+        },
+        "shareMultiplier": 4096,
+        "explorerBlockLink": "https://explorer.talercrypto.com/block/{0}",
+        "explorerTxLink": "https://explorer.talercrypto.com/tx/{0}",
+        "explorerAccountLink": "https://explorer.talercrypto.com/address/{0}"
+    },
     "auroracoin-sha256": {
         "name": "Auroracoin Sha256",
         "canonicalName": "Auroracoin",
