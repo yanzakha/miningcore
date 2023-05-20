@@ -2,7 +2,7 @@ using System;
 using MiningCore.Contracts;
 using MiningCore.Native;
 
-namespace MiningCore.Crypto.Hashing.Algorithms
+namespace MiningCore.Crypto.Hashing.Algorithms;
 {
     public unsafe class Lyra2Z : IHashAlgorithm
     {
