@@ -1,12 +1,12 @@
-using System;
 using MiningCore.Contracts;
 using MiningCore.Native;
 
 namespace MiningCore.Crypto.Hashing.Algorithms;
+
+[Identifier("lyra2z")]
+public unsafe class Lyra2Z : IHashAlgorithm
 {
-    public unsafe class Lyra2Z : IHashAlgorithm
-    {
-        public byte[] Digest(byte[] data, params object[] extra)
+    public byte[] Digest(byte[] data, params object[] extra)
         {
             Contract.RequiresNonNull(data, nameof(data));
             Contract.Requires<ArgumentException>(data.Length == 80, $"{nameof(data)} must be exactly 80 bytes long");
@@ -23,5 +23,4 @@ namespace MiningCore.Crypto.Hashing.Algorithms;
 
             return result;
         }
-    }
 }
