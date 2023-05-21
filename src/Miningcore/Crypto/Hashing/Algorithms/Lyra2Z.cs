@@ -1,7 +1,7 @@
-using MiningCore.Contracts;
-using MiningCore.Native;
+using Miningcore.Contracts;
+using Miningcore.Native;
 
-namespace MiningCore.Crypto.Hashing.Algorithms;
+namespace Miningcore.Crypto.Hashing.Algorithms;
 
 [Identifier("lyra2z")]
 public unsafe class Lyra2Z : IHashAlgorithm
